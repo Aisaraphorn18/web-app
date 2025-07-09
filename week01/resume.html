@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Resume</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/4340cc2545.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom Styles -->
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      /* Simple animation for cards on hover */
+      .card-hover {
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      }
+      .card-hover:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+          0 4px 6px -4px rgb(0 0 0 / 0.1);
+      }
+    </style>
+  </head>
+  <body class="bg-pink-50 text-gray-800">
+    <!-- Main -->
+    <div class="container mx-auto p-4 md:p-8 max-w-6xl">
+      <!-- Changed: Removed lg:items-center to align columns to the top -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <!-- Left Column (Aside) -->
+        <aside class="lg:col-span-1">
+          <!-- Changed: Added sticky positioning back -->
+          <div class="bg-white p-6 rounded-2xl shadow-lg sticky top-8">
+            <header class="text-center">
+              <!-- Profile Picture -->
+              <img
+                src="my_picture.jpg"
+                alt="A photo of Aisaraphon Nillpradub"
+                class="w-40 h-40 rounded-full mx-auto mb-4 border-4 border-pink-200 object-cover shadow-md"
+              />
+
+              <!-- Basic Information -->
+              <h1 class="text-3xl font-bold text-pink-600">
+                Aisaraphon Nillpradub
+              </h1>
+              <p class="text-md text-gray-500 mt-1">Computer Engineering</p>
+              <p class="mt-4 text-gray-600 text-sm leading-relaxed">
+                Motivated Computer Engineering student at Kasetsart University
+                (Sriracha Campus) seeking opportunities in backend and
+                full-stack development. Committed to leveraging technical skills
+                and adaptability to deliver high-quality solutions in software
+                engineering.
+              </p>
+            </header>
+
+            <!-- Social Media Links -->
+
+            <nav class="mt-8">
+              <h2 class="text-xl font-semibold text-center text-gray-700 mb-4">
+                Connect with Me
+              </h2>
+              <div class="flex justify-center flex-wrap gap-4 text-2xl">
+                <!-- Email -->
+                <a
+                  href="mailto:aitsaraphon.n@ku.th"
+                  class="hover:text-pink-500 transition-colors"
+                  title="Email"
+                  target="_blank"
+                >
+                  <i class="fas fa-envelope"></i>
+                </a>
+                <!-- Facebook -->
+                <a
+                  href="https://www.facebook.com/share/1R24dijSEq/?mibextid=wwXIfr"
+                  class="hover:text-pink-500 transition-colors"
+                  title="Facebook"
+                  target="_blank"
+                >
+                  <i class="fab fa-facebook"></i>
+                </a>
+                <!-- Instagram -->
+                <a
+                  href="https://www.instagram.com/novemberkib?igsh=MWVpeHFteTJoa21tNw%3D%3D&utm_source=qr"
+                  class="hover:text-pink-500 transition-colors"
+                  title="Instagram"
+                  target="_blank"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <!-- TikTok -->
+                <a
+                  href="https://www.tiktok.com/@dontknow_332?_t=ZS-8xsPT15ptWU&_r=1"
+                  class="hover:text-pink-500 transition-colors"
+                  title="TikTok"
+                  target="_blank"
+                >
+                  <i class="fab fa-tiktok"></i>
+                </a>
+                <!-- Twitter -->
+                <a
+                  href="https://x.com/bunnylovemeow?s=21"
+                  class="hover:text-pink-500 transition-colors"
+                  title="Twitter"
+                  target="_blank"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <!-- YouTube -->
+                <a
+                  href="https://www.youtube.com/channel/UCVEyVmzdCM3hD1wW7JP4fxw"
+                  class="hover:text-pink-500 transition-colors"
+                  title="YouTube"
+                  target="_blank"
+                >
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </div>
+            </nav>
+          </div>
+        </aside>
+
+        <!-- Right Column (Main Content) -->
+        <main class="lg:col-span-2 space-y-8">
+          <!-- Education Background Section -->
+          <section
+            id="education"
+            class="bg-white p-6 rounded-2xl shadow-lg card-hover"
+          >
+            <h2
+              class="text-2xl font-bold text-pink-600 mb-4 border-b-2 border-pink-100 pb-2"
+            >
+              Education Background
+            </h2>
+            <article class="mb-4">
+              <h3 class="text-lg font-semibold text-gray-700">
+                Kasetsart University Sriracha Campus
+              </h3>
+              <p class="text-sm text-gray-500">2021 - 2025</p>
+              <p class="text-gray-600 mt-1">
+                Bachelor of Engineering in Computer Engineering
+              </p>
+            </article>
+            <article class="mb-4">
+              <h3 class="text-lg font-semibold text-gray-700">
+                Prommanusorn Phetchaburi School
+              </h3>
+              <p class="text-sm text-gray-500">2018 - 2021</p>
+              <p class="text-gray-600 mt-1">Science-Math Program</p>
+            </article>
+            <article>
+              <h3 class="text-lg font-semibold text-gray-700">
+                Samroiyod Wittayakhom School
+              </h3>
+              <p class="text-sm text-gray-500">2016 - 2018</p>
+              <p class="text-gray-600 mt-1">Science-Math Program</p>
+            </article>
+          </section>
+
+          <!-- Skill -->
+          <section
+            id="skills"
+            class="bg-white p-6 rounded-2xl shadow-lg card-hover"
+          >
+            <h2
+              class="text-2xl font-bold text-pink-600 mb-4 border-b-2 border-pink-100 pb-2"
+            >
+              My Skills
+            </h2>
+            <div
+              class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 text-center"
+            >
+              <div class="p-3 bg-pink-50 rounded-lg">
+                <span class="text-3xl">🌐</span>
+                <p class="text-sm text-gray-600 mt-1">HTML5</p>
+              </div>
+              <div class="p-3 bg-pink-50 rounded-lg">
+                <span class="text-3xl">🎨</span>
+                <p class="text-sm text-gray-600 mt-1">CSS & Tailwind</p>
+              </div>
+              <div class="p-3 bg-pink-50 rounded-lg">
+                <span class="text-3xl">⚡️</span>
+                <p class="text-sm text-gray-600 mt-1">JavaScript</p>
+              </div>
+              <div class="p-3 bg-pink-50 rounded-lg">
+                <span class="text-3xl">⚛️</span>
+                <p class="text-sm text-gray-600 mt-1">React</p>
+              </div>
+              <div class="p-3 bg-pink-50 rounded-lg">
+                <span class="text-3xl">✒️</span>
+                <p class="text-sm text-gray-600 mt-1">UI/UX Design</p>
+              </div>
+              <div class="p-3 bg-pink-50 rounded-lg">
+                <span class="text-3xl">🖼️</span>
+                <p class="text-sm text-gray-600 mt-1">Figma</p>
+              </div>
+              <div class="p-3 bg-pink-50 rounded-lg">
+                <span class="text-3xl">📚</span>
+                <p class="text-sm text-gray-600 mt-1">Continuous Learning</p>
+              </div>
+              <div class="p-3 bg-pink-50 rounded-lg">
+                <span class="text-3xl">🤝</span>
+                <p class="text-sm text-gray-600 mt-1">Teamwork</p>
+              </div>
+              <div class="p-3 bg-pink-50 rounded-lg">
+                <span class="text-3xl"> 🕵️‍♀️ </span>
+                <p class="text-sm text-gray-600 mt-1">Problem-Solving</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Hobbies -->
+          <section
+            id="hobbies"
+            class="bg-white p-6 rounded-2xl shadow-lg card-hover"
+          >
+            <h2
+              class="text-2xl font-bold text-pink-600 mb-4 border-b-2 border-pink-100 pb-2"
+            >
+              Hobbies & Interests
+            </h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 text-center">
+              <div class="p-3 bg-pink-50 rounded-lg">
+                <span class="text-3xl">🎮</span>
+                <p class="text-sm text-gray-600 mt-1">Playing video games</p>
+              </div>
+              <div class="p-3 bg-pink-50 rounded-lg">
+                <span class="text-3xl">☕</span>
+                <p class="text-sm text-gray-600 mt-1">Cafe Hopping</p>
+              </div>
+              <div class="p-3 bg-pink-50 rounded-lg">
+                <span class="text-3xl">✈️</span>
+                <p class="text-sm text-gray-600 mt-1">Traveling</p>
+              </div>
+              <div class="p-3 bg-pink-50 rounded-lg">
+                <span class="text-3xl">📸</span>
+                <p class="text-sm text-gray-600 mt-1">Photography</p>
+              </div>
+              <div class="p-3 bg-pink-50 rounded-lg">
+                <span class="text-3xl">🎵</span>
+                <p class="text-sm text-gray-600 mt-1">Listening to Music</p>
+              </div>
+              <div class="p-3 bg-pink-50 rounded-lg">
+                <span class="text-3xl">📖</span>
+                <p class="text-sm text-gray-600 mt-1">Reading</p>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+
+      <!-- Footer -->
+      <footer class="text-center mt-12 py-4">
+        <p class="text-gray-500 text-sm">
+          &copy; 2025 Aisaraphon Nillpradub. All Rights Reserved.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
